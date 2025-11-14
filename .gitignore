@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Models & large artifacts
+checkpoints/
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+*.tar.gz
+
+# Datasets
+datasets/
+*.csv
+*.jsonl
+
+# VS Code / Node builds
+out/
+node_modules/
+*.vsix
+
+# Logs/experiments
+wandb/
+runs/
+
