@@ -5,7 +5,6 @@ from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from trl import SFTTrainer
 import os
 from dotenv import load_dotenv
-
 load_dotenv()
 
 # *** MODIFIED: A simpler function to format a SINGLE example ***
@@ -19,8 +18,6 @@ def format_training_example(example):
 
 def run_finetuning():
     # --- 1. Configuration ---
-    from dotenv import load_dotenv
-    load_dotenv()
     hf_token = os.getenv("HF_TOKEN")
 
     if not hf_token:
