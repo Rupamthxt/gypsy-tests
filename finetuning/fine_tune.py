@@ -23,6 +23,7 @@ def run_finetuning():
     if not hf_token:
         print("Hugging Face token not found. Make sure you are logged in or have a .env file.")
         
+        
     model_id = "deepseek-ai/deepseek-coder-1.3b-instruct"
     dataset_file = "training_dataset.jsonl"
     new_model_name = "codegemma-2b-test-generator"
