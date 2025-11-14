@@ -4,6 +4,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from trl import SFTTrainer
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # *** MODIFIED: A simpler function to format a SINGLE example ***
 # This is more reliable than the batch-based formatting function.
@@ -18,7 +21,7 @@ def run_finetuning():
     # --- 1. Configuration ---
     from dotenv import load_dotenv
     load_dotenv()
-    hf_token = "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"
+    hf_token = os.getenv("HF_TOKEN")
 
     if not hf_token:
         print("Hugging Face token not found. Make sure you are logged in or have a .env file.")
