@@ -27,3 +27,4 @@ node_modules/
 wandb/
 runs/
 
+hf_model_upload/

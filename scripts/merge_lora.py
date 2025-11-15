@@ -4,8 +4,8 @@ import torch
 
 # === CHANGE THESE ===
 BASE_MODEL = "deepseek-ai/deepseek-coder-1.3b-base"   # or your local base model
-LORA_ADAPTER = "results/checkpoint-1000"                        # path to your fine-tuned LoRA adapter
-OUTPUT_DIR = "./merged_deepseek_coder"                 # where to save merged model
+LORA_ADAPTER = "../checkpoints/results/checkpoint-1000"                        # path to your fine-tuned LoRA adapter
+OUTPUT_DIR = "../checkpoints/merged_deepseek_coder"                 # where to save merged model
 
 # Load base model and tokenizer
 print("🔹 Loading base model...")
